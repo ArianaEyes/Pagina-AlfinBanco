@@ -1,7 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/", "destination": "/src/pages/prestamos/index.html" },
-    { "source": "/prestamos", "destination": "/src/pages/prestamos/index.html" },
-    { "source": "/home", "destination": "/src/pages/home/index.html" }
-  ]
-}
