@@ -5,6 +5,7 @@ import { AccesoAdmin } from './Pages/acceso-admin/acceso-admin';
 import { Prestamos } from './Pages/prestamos/prestamos';
 import { Home } from './Pages/home/home';
 export const routes: Routes = [
+  { path: '', redirectTo: 'prestamos', pathMatch: 'full' },
   {
     path: 'login',
     component: Login,
