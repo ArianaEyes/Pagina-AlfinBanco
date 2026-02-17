@@ -32,7 +32,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "baseHref": "/prestamos"
+            "baseHref": "/"
           },
           "configurations": {
             "production": {
