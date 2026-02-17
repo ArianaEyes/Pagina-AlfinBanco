@@ -1,0 +1,28 @@
+
+  <form [formGroup]="formEmpleados" class="contenedor">
+    
+  <div class="container">
+    <div class="img">
+      <img  src="/icons/imagen4.jpg">
+    </div>
+    <div class="menu">
+      <h1 class="fw-bold">Login</h1>
+    <div class="mb-3 cuadro">
+    <label for="usuario" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="usuario" formControlName="usuario">
+  </div>
+  <div class="mb-3 cuadro">
+    <label for="contrasenia" class="form-label">Password</label>
+    <input type="password" class="form-control" id="contrasenia" formControlName="contrasenia">
+  </div>
+  
+  <div class="container-sm">
+    <button type="submit" class="btn btn-primary" (click)="comprobarEmpleado()">Submit</button>
+  </div>
+    </div>
+    
+  </div>
+  <img class="imgDeFondo" src="/icons/imagen1.jpg" id="logo">
+  </form>
+  
+

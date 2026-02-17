@@ -1,0 +1,68 @@
+<div class="contenedor">
+    
+    <div class="user-menu">
+        <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Nombre de usuario-admin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      
+    </div>
+  </div>
+</nav>
+    </div>
+
+    <div class="main">
+        <div class="dashboard-menu">
+        <nav class="nav flex-column">
+            <button class="nav-link" (click)="mostrarPrestamos()">Préstamos</button>
+            <button class="nav-link" (click)="mostrarHome()">Home</button>
+            
+        </nav>
+
+        </div>
+
+        <div class="containers-menu">
+            @if(prestamos){
+                <div class="menu">
+            <form [formGroup]="formConfig">
+            <h4>Cambiar banner de la página préstamos</h4>
+                 <select class="form-select ps-3" formControlName="banner">
+                   <option value="">Open this select menu</option>
+                   @for (img of imagenes; track img.imagen_id) {
+                     <option [value]="img.ruta">
+                       {{ img.nombre }}
+                     </option>
+                   }
+                 </select>
+            
+                <div class="mb-3">
+                    <label for="texto_1" class="form-label">Texto 1</label>
+                    <input type="text" class="form-control" id="texto_1" formControlName="texto_1">
+                </div>
+                <div class="mb-3">
+                    <label for="texto_2" class="form-label">Texto 2</label>
+                    <input type="text" class="form-control" id="texto_2" formControlName="texto_2">
+                </div>
+                <div class="mb-3">
+                    <label for="texto_3" class="form-label">Texto 3</label>
+                    <input type="text" class="form-control" id="texto_3" formControlName="texto_3">
+                </div>
+                <button type="submit" class="btn btn-primary" (click)="editarConfig()">Guardar</button>
+
+            </form>
+            </div>
+        }@else if(home){
+                <h1>home</h1>
+            }
+            
+
+        </div>
+
+
+
+    </div>
+</div>
+

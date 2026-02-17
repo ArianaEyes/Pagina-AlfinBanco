@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.imgDeFondo{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.container{
+    background-color: white;
+    height: 60vh;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.133);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.274);
+}
+.menu{
+    background-color: white;
+    height: 100%;
+    width: 40%;
+    padding: 48px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0px 16px 16px 0px;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.274);
+} 
+.cuadro{
+    width: 100%;
+    margin-top: 2vh;
+}
+.btn{
+    margin-top: 5vh;
+    padding: 1vh 2vh;
+    border:none;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+}
+.form-control{
+    padding: .5vh;
+    margin-top: .8vh;
+}
+.img{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+.img img{
+    object-fit: cover; 
+    background-size: cover;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 16px 0px 0px 16px;
+}
