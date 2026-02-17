@@ -7,7 +7,7 @@ import { Config } from '../../Model/config';
   selector: 'app-prestamos',
   imports: [CommonModule],
   standalone: true,
-  templateUrl: './prestamos.html',
+  templateUrl: './index.html',
   styleUrl: './prestamos.css',
 })
 export class Prestamos {
