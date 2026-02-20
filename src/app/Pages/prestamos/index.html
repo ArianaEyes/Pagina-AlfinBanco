@@ -17,12 +17,12 @@
             <div style="display: flex; justify-content: space-around; width: 70%;">
                 <div class="carousel">
                         @for(item of items;track item; let i=$index){
-                            <div class="col-12 col-md-4" [style.height]="item.height" 
+                            <div class="col-12 col-md-4" [style.height]="isMobile ? 'auto':item.height" 
                             [class.active]="i===currentIndex || !isMobile">
-                                <div style="height: 100%; width: 50px;margin-top:2vh;margin-left:2vh ;">
+                                <div class="img_icon">
                                     <img [src]="item.img" alt="">
                                 </div>
-                                <div style="width: 85%; display: flex; flex-wrap: wrap; height: 5.5vh;margin-top: 1vh;">
+                                <div class="tt_d" >
                                     <h6>{{item.titulo}}</h6>
                                     <p>{{item.descripcion}}</p>
                                 </div>
@@ -93,10 +93,10 @@
         </div>
 
         <div class="seccion2">
-            <ul class="nav justify-content-center"
-                style="border-bottom:2px solid rgb(212, 212, 212); height: 5vh; width:100%; padding: 0 20px; flex-wrap: wrap;">
+            <ul class="nav justify-content-center ul_prestamos"
+                style="border-bottom:2px solid rgb(212, 212, 212); width:100%; padding: 0 20px; flex-wrap: wrap;">
                 <li class="nav-item">
-                    <a class="nav-link active" style="font-size: 1.2rem;font-weight: 700; height: 4.9vh;"
+                    <a class="nav-link active" style="font-size: 1.2rem;height:5vh;font-weight: 700; height: 4.9vh;"
                         [ngClass]="pregunta1 ? 'activo' : 'inactivo'" (click)="nav1()">¿Qué tan fácil es?</a>
                 </li>
                 <li class="nav-item" style="margin-left: 1vh;">
@@ -112,8 +112,7 @@
             @if(pregunta1){
             <div class="containers-cards">
 
-                <div class="card text-center"
-                    style="width: 340px; height:233px; padding: 28px; border-radius: 10px;border-color: rgb(225, 225, 225);">
+                <div class="card text-center">
                     <div class="card-body" style="padding: 0;">
                         <h5 class="card-title text-center"
                             style="color:rgb(104, 0, 156); border-bottom: 2px solid rgb(220, 220, 220); width: 48%; margin:0 auto; height: 3.5vh;">
@@ -124,8 +123,7 @@
                     </div>
                 </div>
 
-                <div class="card text-center"
-                    style="width: 340px; height:233px; padding: 28px; border-radius: 10px;border-color: rgb(225, 225, 225);">
+                <div class="card text-center">
                     <div class="card-body" style="padding: 0;">
                         <h5 class="card-title text-center"
                             style="color:rgb(104, 0, 156); border-bottom: 2px solid rgb(220, 220, 220); width: 48%; margin:0 auto; height: 3.5vh;">
@@ -136,8 +134,7 @@
                     </div>
                 </div>
 
-                <div class="card text-center"
-                    style="width: 340px; height:233px; padding: 28px; border-radius: 10px;border-color: rgb(225, 225, 225);">
+                <div class="card text-center">
                     <div class="card-body" style="padding: 0;">
                         <h5 class="card-title text-center"
                             style="color:rgb(104, 0, 156); border-bottom: 2px solid rgb(220, 220, 220); width: 48%; margin:0 auto; height: 3.5vh;">
