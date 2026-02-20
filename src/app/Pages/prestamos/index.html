@@ -1,4 +1,4 @@
-<div class="contenedor">
+<div class="contenedor" [class.contenedor_pregunta2]="pregunta2">
     <nav class="navbar">
         <div class="images">
             <img class="alfin" src="/icons/alfin.svg">
@@ -92,20 +92,19 @@
             </div>
         </div>
 
-        <div class="seccion2">
-            <ul class="nav justify-content-center ul_prestamos"
-                style="border-bottom:2px solid rgb(212, 212, 212); width:100%; padding: 0 20px; flex-wrap: wrap;">
+        <div class="seccion2" [class.pregunta2]="pregunta2">
+            <ul class="nav justify-content-center ul_prestamos">
                 <li class="nav-item">
-                    <a class="nav-link active" style="font-size: 1.2rem;height:5vh;font-weight: 700; height: 4.9vh;"
-                        [ngClass]="pregunta1 ? 'activo' : 'inactivo'" (click)="nav1()">¿Qué tan fácil es?</a>
+                    <a class="nav-link active" 
+                        [ngClass]="pregunta1 ? 'activo' : 'inactivo'"  (click)="nav1()">¿Qué tan fácil es?</a>
                 </li>
                 <li class="nav-item" style="margin-left: 1vh;">
-                    <a class="nav-link" style="font-size: 1.2rem; font-weight: 700;"
-                        [ngClass]="pregunta2 ? 'activo' : 'inactivo'" (click)="nav2()">Requisitos</a>
+                    <a class="nav-link" 
+                        [ngClass]="pregunta2 ? 'activo' : 'inactivo'"  (click)="nav2()">Requisitos</a>
                 </li>
                 <li class="nav-item" style="margin-left: 1vh;">
-                    <a class="nav-link" style="font-size: 1.2rem;font-weight: 700;"
-                        [ngClass]="pregunta3 ? 'activo' : 'inactivo'" (click)="nav3()">Preguntas frecuentes</a>
+                    <a class="nav-link"
+                        [ngClass]="pregunta3 ? 'activo' : 'inactivo'"  (click)="nav3()">Preguntas frecuentes</a>
                 </li>
             </ul>
 
@@ -114,39 +113,36 @@
 
                 <div class="card text-center">
                     <div class="card-body" style="padding: 0;">
-                        <h5 class="card-title text-center"
-                            style="color:rgb(104, 0, 156); border-bottom: 2px solid rgb(220, 220, 220); width: 48%; margin:0 auto; height: 3.5vh;">
+                        <h5 class="card-title text-center">
                             Conectamos</h5>
                         <h6 class="card-subtitle mb-2 text-center"
-                            style="color: orangered; font-size: 1.2rem; margin-top: 2vh;">Te conocemos</h6>
+                            style="color: orangered; margin-top: 2vh;">Te conocemos</h6>
                         <p class="card-text" style="margin-top:2vh">{{texto_1}}</p>
                     </div>
                 </div>
 
                 <div class="card text-center">
                     <div class="card-body" style="padding: 0;">
-                        <h5 class="card-title text-center"
-                            style="color:rgb(104, 0, 156); border-bottom: 2px solid rgb(220, 220, 220); width: 48%; margin:0 auto; height: 3.5vh;">
+                        <h5 class="card-title text-center">
                             Conectamos</h5>
                         <h6 class="card-subtitle mb-2 text-center"
-                            style="color: orangered; font-size: 1.2rem; margin-top: 2vh;">Te contactamos</h6>
+                            style="color: orangered; margin-top: 2vh;">Te contactamos</h6>
                         <p class="card-text" style="margin-top:2vh">{{texto_2}}</p>
                     </div>
                 </div>
 
                 <div class="card text-center">
                     <div class="card-body" style="padding: 0;">
-                        <h5 class="card-title text-center"
-                            style="color:rgb(104, 0, 156); border-bottom: 2px solid rgb(220, 220, 220); width: 48%; margin:0 auto; height: 3.5vh;">
+                        <h5 class="card-title text-center">
                             Conectamos</h5>
                         <h6 class="card-subtitle mb-2 text-center"
-                            style="color: orangered; font-size: 1.2rem; margin-top: 2vh;">Te prestamos</h6>
+                            style="color: orangered; margin-top: 2vh;">Te prestamos</h6>
                         <p class="card-text" style="margin-top:2vh">{{texto_3}}</p>
                     </div>
                 </div>
             </div>
             }@else if(pregunta2){
-            <div class="contenedor-pregunta2">
+            <div class="contenedor-pregunta2 ">
                 <div style="margin-bottom: 12px;">
                     <div style="    font-size: 16px;font-weight: 600;color: #8f1a95;">¿Qué documentación necesito si voy
                         a una agencia?</div>
@@ -168,7 +164,7 @@
                 </div>
             </div>
             }@else if(pregunta3){
-            <div style="margin-top: 0px;">
+            <div class="drops" >
                 <div style="margin-top: 24px;display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 24px;">
                     <div class="columna-1">
                         <div class="columna-2">
@@ -243,11 +239,7 @@
         </div>
 
         <div class="seccion3">
-            <h5 style="color: orangered;
-             font-weight: bold;
-             margin: auto 0;
-             margin-left: 2vh;
-             font-size: 1.1rem;">
+            <h5 class="terminos_condiciones">
                 Términos y condiciones</h5>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg"
                 viewBox="0 0 16 16">
@@ -257,8 +249,8 @@
         </div>
 
     </div>
-    <div class="footer" style="width: 100%; height: 94px; display: flex; flex-wrap: wrap;">
-        <footer class="_footer_1y245_1">
+    
+        <footer class="footer">
             <div class="_container_1y245_9">
                 <div class="_column_1y245_18">
                     <p>© Alfin Contacto 2025 / All Rights Reserved</p>
@@ -307,5 +299,5 @@
                 </div>
             </div>
         </footer>
-    </div>
+   
 </div>

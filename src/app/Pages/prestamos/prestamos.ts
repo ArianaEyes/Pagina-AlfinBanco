@@ -94,12 +94,19 @@ export class Prestamos {
       this.pregunta1 = false;
       this.pregunta3 = false;
     }
+    if (this.pregunta1 == false && this.pregunta2 && this.pregunta3 == false) {
+      this.pregunta1 = true;
+    }
+
     this.pregunta2 = !this.pregunta2;
   }
   nav3() {
     if (this.pregunta2 == true || this.pregunta1 == true) {
       this.pregunta2 = false;
       this.pregunta1 = false;
+    }
+    if (this.pregunta1 == false && this.pregunta2 && this.pregunta3 == false) {
+      this.pregunta1 = true;
     }
     this.pregunta3 = !this.pregunta3;
   }
