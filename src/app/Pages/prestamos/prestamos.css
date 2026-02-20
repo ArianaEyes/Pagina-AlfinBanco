@@ -325,7 +325,6 @@ svg{
 }
 @media (max-width: 412px) {
     .contenedor{
-        background-color: lime;
         height: 250vh;
         overflow-y: hidden;
     }
@@ -362,7 +361,7 @@ svg{
 .select-formulario{
     font-size: 14px;
 }
-.formulario[_ngcontent-ng-c877638359]{
+.formulario[_ngcontent-ng-c1173163175]{
     width: 41.5vh;
     height: 48.8vh;
     position: absolute;
