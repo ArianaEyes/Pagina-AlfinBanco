@@ -539,6 +539,31 @@ svg{
     height: 14.4vh;
     position: relative;
     margin-top:auto;
+    justify-content: center;
+}
+._container_1y245_9 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120vh;
+    margin: 0 auto;
+    
+}
+._column_1y245_18 {
+    flex: 1;
+    min-width: 20vh;
+    text-align: center;
+}
+._social_1y245_29 {
+    text-align: center;
+    margin: 0 auto;
+}
+._icons_1y245_33 {
+    display: flex;
+    justify-content: center;
+    gap: 1.5vh;
+    margin-top: .5vh;
 }
 }
 
