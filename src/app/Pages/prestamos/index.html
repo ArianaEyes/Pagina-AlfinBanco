@@ -1,4 +1,4 @@
-<div class="contenedor" [class.contenedor_pregunta2]="pregunta2">
+<div class="contenedor" [class.contenedor_pregunta2]="pregunta2" [class.contenedor_pregunta3]="pregunta3">
     <nav class="navbar">
         <div class="images">
             <img class="alfin" src="/icons/alfin.svg">
@@ -92,17 +92,17 @@
             </div>
         </div>
 
-        <div class="seccion2" [class.pregunta2]="pregunta2">
-            <ul class="nav justify-content-center ul_prestamos">
+        <div class="seccion2" [class.pregunta2]="pregunta2" [class.pregunta3]="pregunta3">
+            <ul class="nav ul_prestamos">
                 <li class="nav-item">
                     <a class="nav-link active" 
                         [ngClass]="pregunta1 ? 'activo' : 'inactivo'"  (click)="nav1()">¿Qué tan fácil es?</a>
                 </li>
-                <li class="nav-item" style="margin-left: 1vh;">
+                <li class="nav-item" style="margin-left: 5vh;" >
                     <a class="nav-link" 
                         [ngClass]="pregunta2 ? 'activo' : 'inactivo'"  (click)="nav2()">Requisitos</a>
                 </li>
-                <li class="nav-item" style="margin-left: 1vh;">
+                <li class="nav-item">
                     <a class="nav-link"
                         [ngClass]="pregunta3 ? 'activo' : 'inactivo'"  (click)="nav3()">Preguntas frecuentes</a>
                 </li>
@@ -164,37 +164,37 @@
                 </div>
             </div>
             }@else if(pregunta3){
-            <div class="drops" >
-                <div style="margin-top: 24px;display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 24px;">
+            <div class="drops">
+                <div class="columnas">
                     <div class="columna-1">
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Dónde puedo pagar mis cuotas?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Cómo puedo obtener mi cronograma?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Qué es la TCEA?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Qué es el Seguro de Desgravamen?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Qué es un pago adelantado?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                     </div>
@@ -202,31 +202,31 @@
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Qué pasa si no pago mis cuotas a tiempo?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Puedo solicitar otro préstamo si aún tengo uno vigente?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Cuánto tiempo demora la aprobación del préstamo?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Puedo pagar mi préstamo antes de tiempo?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                         <div class="columna-2">
                             <div class="columna-3">
                                 <span>¿Qué documentos necesito presentar?</span>
-                                <span class="columna-4">▼</span>
+                                <span class="columna-4">+</span>
                             </div>
                         </div>
                     </div>
