@@ -7,14 +7,14 @@
     </nav>
     <div class="banner">
         <picture>
-            <source media="(max-width: 412px)" srcset="/icons/banner-1-2.jpg">
+            <source media="(min-width: 320px) and (max-width: 768px)" srcset="/icons/banner-1-2.jpg">
             <img src="/icons/banner1.jpg" alt="">
         </picture>
 
     </div>
     <div class="main">
         <div class="seccion1">
-            <div style="display: flex; justify-content: space-around; width: 70%;">
+            <div style="display: flex; justify-content: space-around; width: 100%;">
                 <div class="carousel">
                         @for(item of items;track item; let i=$index){
                             <div class="col-12 col-md-4" [style.height]="isMobile ? 'auto':item.height" 
@@ -28,10 +28,7 @@
                                 </div>
                                 </div>
                         }
-                        
-                      
                 </div>
-
                 <div class="seccion-formulario">
                     <form action="" class="formulario">
                         <div class="title-top">
@@ -98,7 +95,7 @@
                     <a class="nav-link active" 
                         [ngClass]="pregunta1 ? 'activo' : 'inactivo'"  (click)="nav1()">¿Qué tan fácil es?</a>
                 </li>
-                <li class="nav-item" style="margin-left: 5vh;" >
+                <li class="nav-item">
                     <a class="nav-link" 
                         [ngClass]="pregunta2 ? 'activo' : 'inactivo'"  (click)="nav2()">Requisitos</a>
                 </li>
@@ -142,12 +139,12 @@
                 </div>
             </div>
             }@else if(pregunta2){
-            <div class="contenedor-pregunta2 ">
+            <div class="contenedor-pregunta2">
                 <div style="margin-bottom: 12px;">
-                    <div style="    font-size: 16px;font-weight: 600;color: #8f1a95;">¿Qué documentación necesito si voy
+                    <div style="font-size: 16px;font-weight: 600;color: #8f1a95;">¿Qué documentación necesito si voy
                         a una agencia?</div>
                 </div>
-                <div
+                <div class=""
                     style="margin-top: 8px;display: flex;flex-direction: column;gap: 8px; *, :after, :before {box-sizing: border-box;}">
                     <div style="display: flex;align-items: flex-start;gap: 8px;font-size: 14px;color: #444;">
                         <div
@@ -161,8 +158,11 @@
                         </div>
                         <div>Comprobante de domicilio</div>
                     </div>
+                    
                 </div>
+                
             </div>
+            <p style="font-size: 12px; font-style: italic; color: rgba(0, 0, 0, 0.457);">*Documentación sujeta a lo requerido por el banco y evaluación crediticia.</p>
             }@else if(pregunta3){
             <div class="drops">
                 <div class="columnas">

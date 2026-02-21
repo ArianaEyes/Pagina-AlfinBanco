@@ -57,7 +57,7 @@ export class Prestamos {
   isMobile = false;
 
   checkScreen() {
-    this.isMobile = window.innerWidth < 413;
+    this.isMobile = window.innerWidth < 769;
 
     if (this.isMobile && !this.intervalId) {
       this.startAutoPlay();
@@ -80,34 +80,39 @@ export class Prestamos {
     this.texto_3 = this.config.texto_3;
   }
   nav1() {
-    if (this.pregunta2 == true || this.pregunta3 == true) {
+    this.pregunta1 = !this.pregunta1;
+
+    if (this.pregunta1 == true) {
       this.pregunta2 = false;
       this.pregunta3 = false;
-    }
-    this.pregunta1 = !this.pregunta1;
-    if (this.pregunta1 == false && this.pregunta2 && this.pregunta3 == false) {
+    } else if (this.pregunta2 == true || this.pregunta3 == true) {
+      this.pregunta1 = false;
+    } else if (this.pregunta2 == false && this.pregunta3 == false && this.pregunta1 == false) {
       this.pregunta1 = true;
     }
   }
   nav2() {
-    if (this.pregunta1 == true || this.pregunta3 == true) {
+    this.pregunta2 = !this.pregunta2;
+
+    if (this.pregunta2 == true) {
       this.pregunta1 = false;
       this.pregunta3 = false;
+    } else if (this.pregunta1 == true || this.pregunta3 == true) {
+      this.pregunta2 = false;
+    } else if (this.pregunta2 == false && this.pregunta3 == false && this.pregunta1 == false) {
+      this.pregunta2 = true;
     }
-    if (this.pregunta1 == false && this.pregunta2 && this.pregunta3 == false) {
-      this.pregunta1 = true;
-    }
-
-    this.pregunta2 = !this.pregunta2;
   }
   nav3() {
-    if (this.pregunta2 == true || this.pregunta1 == true) {
+    this.pregunta3 = !this.pregunta3;
+
+    if (this.pregunta3 == true) {
       this.pregunta2 = false;
       this.pregunta1 = false;
+    } else if (this.pregunta1 == true || this.pregunta2 == true) {
+      this.pregunta3 = false;
+    } else if (this.pregunta2 == false && this.pregunta1 == false && this.pregunta3 == false) {
+      this.pregunta3 = true;
     }
-    if (this.pregunta1 == false && this.pregunta2 && this.pregunta3 == false) {
-      this.pregunta1 = true;
-    }
-    this.pregunta3 = !this.pregunta3;
   }
 }
