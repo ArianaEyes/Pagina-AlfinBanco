@@ -538,8 +538,8 @@ svg {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 10vh;
+    margin: 10vh auto 4vh auto;
+    
     justify-content: space-around;
     flex-shrink: 0;
   }
@@ -632,6 +632,13 @@ svg {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 24px;
+  }
+  .columna-1{
+    width: 95%;
+
+  }
+  .drops{
+    width: 95%;
   }
 
   .footer {
@@ -1101,7 +1108,7 @@ svg {
   }
 
   .containers-cards {
-    height: 60vh;
+    height:auto;
     justify-content: center;
 
   }
