@@ -15,7 +15,7 @@
     <div class="main">
         <div class="seccion1">
             <div style="display: flex; justify-content: space-around; width: 100%;">
-                <div class="carousel">
+                <div class="carousel" [class.carousel_pregunta2]="pregunta2">
                         @for(item of items;track item; let i=$index){
                             <div class="col-12 col-md-4" [style.height]="isMobile ? 'auto':item.height" 
                             [class.active]="i===currentIndex || !isMobile">

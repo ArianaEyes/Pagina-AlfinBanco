@@ -1018,7 +1018,9 @@ svg {
     position: absolute;
     top: 55vh;
   }
-
+  .carousel_pregunta2{
+    height: 13.2%;
+  }
   .tt_d p{
     font-size: .8rem;
   }
