@@ -2,14 +2,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 .contenedor {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
 }
-
 .navbar {
   z-index: 10;
   position: fixed;
@@ -28,29 +26,24 @@ picture{
   width: 33vh;
   margin-left: 46vh;
 }
-
 .alfin {
   width: 13.3vh;
 }
-
 .prestaltoke {
   width: 18.1vh;
 }
-
 .banner {
   margin-top: 7vh;
   width: 100%;
-  height: 45.65vh;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
 }
-
 .banner img {
   width: 100%;
   object-fit: contain;
 }
-
 .main {
   height: 96.5vh;
   width: 100%;
@@ -59,24 +52,23 @@ picture{
   background-color: rgb(252, 252, 252);
   position: relative;
 }
-
 .seccion1 {
   width: 100%;
   height: 47.9vh;
-  background-color: rgb(249, 249, 249);
+  /* background-color: rgb(249, 249, 249); */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .carousel {
   width: 65vh;
   height: 90%;
   margin-top: 3vh;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 25vh;
+  
 }
-
 .tt_d {
   width: 85%;
   display: flex;
@@ -84,14 +76,12 @@ picture{
   height: 5.5vh;
   margin-top: 1vh;
 }
-
 .img_icon {
   height: 100%;
   width: 50px;
   margin-top: 2vh;
   margin-left: 2vh;
 }
-
 .col-md-4 {
   border-radius: 15px;
   width: 100%;
@@ -103,7 +93,6 @@ picture{
   color: rgb(0, 0, 0);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
 }
-
 .seccion-formulario {
   width: 40%;
   height: 100%;
@@ -111,7 +100,6 @@ picture{
   flex-wrap: wrap;
   border-radius: 5px;
 }
-
 .formulario {
   width: 27%;
   height: 50.7vh;
@@ -122,7 +110,6 @@ picture{
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
 }
-
 .select_input {
   width: 100%;
   height: 6vh;
@@ -130,40 +117,33 @@ picture{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .select-formulario {
   width: 27%;
   border-radius: 3px 0px 0px 3px;
 }
-
 .select_alcostao {
   width: 60%;
 }
-
 h6 {
   width: 100%;
   color: #8f1a95;
   font-weight: bold;
   margin-left: 1.5vh;
 }
-
 p {
   width: 100%;
   margin-left: 1.5vh;
   font-size: 0.9rem;
 }
-
 input::placeholder {
   color: rgba(0, 0, 0, 0.311);
 }
-
 .formulario .btn {
   border-radius: 20px;
   font-weight: 500;
   color: white;
   background-color: rgb(255, 86, 24);
 }
-
 .seccion2 {
   width: 110vh;
   height: 30vh;
@@ -172,7 +152,6 @@ input::placeholder {
   margin: 0 auto;
   justify-content: space-around;
 }
-
 .seccion2 .nav-item {
   font-size: 1.2rem;
   height: 5vh;
@@ -181,18 +160,15 @@ input::placeholder {
 .seccion2 .nav-link{
     height: 5.2vh;
 }
-
 .ul_prestamos {
   height: 5vh;
   width: 100%;
   justify-content: center;
 }
-
 .ul_prestamos .nav-item {
   /* aqui es donde se pueden separar "que tan facil 
     es?" "requisitos" "preguntas frecuentes" */
 }
-
 .card-title {
   color: rgb(104, 0, 156);
   border-bottom: 2px solid rgb(220, 220, 220);
@@ -200,7 +176,6 @@ input::placeholder {
   margin: 0 auto;
   height: 3.5vh;
 }
-
 .card {
   width: 34vh;
   height: 23.3vh;
@@ -208,19 +183,15 @@ input::placeholder {
   border-radius: 10px;
   border-color: rgb(225, 225, 225);
 }
-
 .card-subtitle {
   font-size: 18px;
 }
-
 .seccion2 li a {
   cursor: pointer;
 }
-
 .seccion2 a {
   margin: 0 auto;
 }
-
 .formulario-contenedores {
   margin: 0 auto;
   width: 88%;
@@ -229,19 +200,16 @@ input::placeholder {
   justify-content: center;
   height: 40%;
 }
-
 .title-top {
   height: 10vh;
   text-align: center;
   margin-top: 3vh;
 }
-
 .seccion2 ul {
   margin-bottom: 2vh;
   color: rgb(190, 190, 190);
   border-bottom: 2px solid rgb(190, 190, 190);
 }
-
 .containers-cards {
   width: 100%;
   height: 20vh;
@@ -250,14 +218,12 @@ input::placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .form-control {
   width: 100%;
   height: 5.6vh;
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.175);
 }
-
 .seccion3 {
   display: flex;
   flex-wrap: wrap;
@@ -271,16 +237,13 @@ input::placeholder {
   justify-content: space-between;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.082);
 }
-
 .activo {
   color: orangered;
   border-bottom: 3px solid orangered;
 }
-
 .inactivo {
   color: rgb(190, 190, 190);
 }
-
 .terminos_condiciones {
   color: orangered;
   font-weight: bold;
@@ -288,21 +251,18 @@ input::placeholder {
   margin-left: 2vh;
   font-size: 1.1rem;
 }
-
 .bi-plus-lg {
   color: orangered;
   width: 2vh;
   margin: auto;
   margin-right: 2vh;
 }
-
 .columnas {
   margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
-
 ._container_1y245_9 {
   display: flex;
   flex-wrap: wrap;
@@ -311,24 +271,20 @@ input::placeholder {
   max-width: 120vh;
   margin: 0 auto;
 }
-
 ._column_1y245_18 {
   flex: 1;
   min-width: 20vh;
   text-align: center;
 }
-
 ._social_1y245_29 {
   text-align: center;
 }
-
 ._icons_1y245_33 {
   display: flex;
   justify-content: center;
   gap: 1.5vh;
   margin-top: 0.5vh;
 }
-
 .input-consentimiento {
   width: 75%;
   display: flex;
@@ -337,16 +293,13 @@ input::placeholder {
   margin: 0px 4vh;
   font-size: 0.7rem;
 }
-
 .input-consentimiento button {
   margin-left: 6.5vh;
 }
-
 svg {
   color: white;
   font-size: 1.2rem;
 }
-
 .contenedor-pregunta2 {
   width: 100%;
   height: 13.6vh;
@@ -355,23 +308,19 @@ svg {
   border: 1px solid #e5e5e5;
   padding: 24px 28px;
 }
-
 .pregunta2 {
   height: 20vh;
 }
-
 .columna-1 {
   display: flex;
   flex-direction: column;
   gap: 1.2vh;
 }
-
 .columna-2 {
   border-radius: 0.8vh;
   border: 1px solid #ececec;
   background-color: #fff;
 }
-
 .columna-3 {
   padding: 1vh 1.2vh;
   display: flex;
@@ -382,17 +331,14 @@ svg {
   color: #444;
   cursor: pointer;
 }
-
 .columna-4 {
   font-size: 1.4vh;
   color: #f15a24;
   margin-left: 0.8vh;
 }
-
 .drops {
   margin-top: 0px;
 }
-
 .footer {
   background: linear-gradient(90deg, #609, #1c244b, #ff3c00);
   color: #fff;
@@ -411,7 +357,267 @@ svg {
   display: flex;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
+
+
+@media (min-width: 320px) and (max-width:728px){
+  .contenedor {
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .images {
+    width: 100%;
+    margin-left: 1vh;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .banner {
+    width: 100%;
+    height: 22%;
+  }
+  .banner img {
+    object-fit: contain;
+  }
+  .main {
+    height: auto;
+    width: 100%;
+    display: flex;
+
+
+  }
+  .seccion1[_ngcontent-ng-c586444243]{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50vh;
+  }
+  .seccion-formulario {
+    width: 100%;
+    height: 50.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+
+    z-index: 1;
+  }
+  
+  .select-formulario {
+    font-size: 14px;
+  }
+  .formulario[_ngcontent-ng-c4043525379] {
+    width: 95vh;
+    height: 48.8vh;
+    border-radius: 5px;
+    background-color: #fff;
+    position: inherit;
+    margin: auto;
+    margin-bottom: 2vh;
+    box-shadow: 0 4px 15px #00000024;
+    padding: 3.2vh;
+    justify-content: space-around;
+  }
+  
+  .title-top {
+    margin-top: 1vh;
+    height: 5vh;
+  }
+  .formulario h5,
+  h4 {
+    font-size: 18px;
+  }
+  .formulario p {
+    font-size: 12px;
+  }
+  .formulario-contenedores {
+    margin-top: 3vh;
+    height: 20vh;
+  }
+  .input-consentimiento button {
+    margin-left: 1vh;
+  }
+  .input-consentimiento {
+    margin-top: 1vh;
+    margin-left: 0vh;
+    width: 95%;
+  }
+  .form-check {
+    margin-left: 2vh;
+    font-size: 10px;
+  }
+  .carousel {
+    width: 86%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 55vh;
+    margin: auto;
+  }
+  .tt_d {
+    width: 85%;
+    font-size: .7rem;
+  }
+  .img_icon {
+    height: 100%;
+    width: 30px;
+    margin-top: 1vh;
+    margin-left: 1vh;
+  }
+
+  .col-12 {
+    display: none;
+  }
+
+  .col-12.active {
+    display: block;
+  }
+
+  .col-12.col-md-4.active {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .seccion1 {
+    height: 70vh;
+    margin: 0;
+  }
+
+  .seccion2 {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 10vh;
+    justify-content: space-around;
+    flex-shrink: 0;
+  }
+
+  .seccion2 .nav {
+    flex-wrap: nowrap;
+  }
+
+  .ul_prestamos {
+    width: 100%;
+    height: 5.4vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: space-around;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .seccion2 .nav-item {
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+  .seccion2 .nav-link {
+    /* nav parece que da un "height:auto;" */
+    width: 20vh;
+    white-space: nowrap;
+    margin: 0;
+  }
+  .ul_prestamos::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  .contenedor-pregunta2{
+    height: auto;
+  }
+  .pregunta3 {
+    height: auto;
+  }
+
+  .ul_prestamos .nav-item {
+    align-items: flex-start;
+    width: 45%;
+    font-size: 17px;
+    font-weight: 700;
+    z-index: 5;
+  }
+  .ul_prestamos a{
+    text-align: center;
+  }
+  
+  .containers-cards {
+    height: auto;
+    justify-content: center;
+
+  }
+
+  .pregunta2 {
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1vh;
+  }
+
+  .card-title {
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+  .card-subtitle[_ngcontent-ng-c2688154082] {
+    font-size: 18px;
+  }
+
+  .card h6 {
+    margin-left: 0;
+  }
+
+  .seccion3 {
+    width: 90%;
+    margin: 2vh auto;
+  }
+
+  .columnas {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 14.4vh;
+    position: relative;
+    margin-top: auto;
+    justify-content: center;
+  }
+
+  ._container_1y245_9 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120vh;
+    margin: 0 auto;
+  }
+
+  ._column_1y245_18 {
+    flex: 1;
+    min-width: 20vh;
+    text-align: center;
+  }
+
+  ._social_1y245_29 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  ._icons_1y245_33 {
+    display: flex;
+    justify-content: center;
+    gap: 1.5vh;
+    margin-top: 0.5vh;
+  }
+}
+@media (min-width: 729px) and (max-width:768px) {
   .contenedor {
     height: auto;
     overflow-y: hidden;
@@ -503,6 +709,7 @@ svg {
     flex-wrap: wrap;
     position: absolute;
     top: 55vh;
+    margin: auto;
   }
   .tt_d {
     width: 85%;
@@ -677,7 +884,7 @@ svg {
     margin-top: 0.5vh;
   }
 }
-@media (max-width: 412px) {
+@media (min-width: 769px) and (max-width:899px) {
   .contenedor {
     height: auto;
     overflow-y: hidden;
@@ -710,29 +917,22 @@ svg {
     height: 50vh;
   }
   .seccion-formulario {
-    width: 100%;
+    width: 40%;
     height: 50.5vh;
     display: flex;
     flex-wrap: wrap;
     border-radius: 5px;
-
     z-index: 1;
   }
   
   .select-formulario {
     font-size: 14px;
   }
-  .formulario[_ngcontent-ng-c4043525379] {
-    width: 95vh;
-    height: 48.8vh;
-    border-radius: 5px;
-    background-color: #fff;
-    position: inherit;
-    margin: auto;
-    margin-bottom: 2vh;
-    box-shadow: 0 4px 15px #00000024;
-    padding: 3.2vh;
-    justify-content: space-around;
+  .formulario[_ngcontent-ng-c4043525379]{
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    bottom: 74%;
   }
   
   .title-top {
@@ -744,7 +944,7 @@ svg {
     font-size: 18px;
   }
   .formulario p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .formulario-contenedores {
     margin-top: 3vh;
@@ -762,17 +962,20 @@ svg {
     margin-left: 2vh;
     font-size: 10px;
   }
-  .carousel {
-    width: 86%;
-    height: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 55vh;
+  .carousel{
+    width: 45%;
+    margin: 0;
+
   }
-  .tt_d {
-    width: 85%;
-    font-size: .7rem;
+  .tt_d{
+    width: 75%;
+    margin: 0;
+    margin-top: 2px;
+    font-size: 12px;
+  }
+  
+  .tt_d p{
+    font-size: 13px;
   }
   .img_icon {
     height: 100%;
@@ -804,8 +1007,8 @@ svg {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 10vh;
+    margin: 10vh auto 4vh auto;
+    
     justify-content: space-around;
     flex-shrink: 0;
   }
@@ -871,315 +1074,86 @@ svg {
 
   .card {
     width: 100%;
+    margin: 1vh auto;
   }
 
-  .card-title {
-    font-size: 18px;
-    margin: 0 auto;
-  }
+  
 
-  .card-subtitle[_ngcontent-ng-c2688154082] {
-    font-size: 18px;
-  }
-
-  .card h6 {
-    margin-left: 0;
-  }
-
-  .seccion3 {
-    width: 90%;
-    margin: 2vh auto;
-  }
-
-  .columnas {
-    margin-top: 24px;
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 24px;
-  }
-
-  .footer {
-    width: 100%;
-    height: 14.4vh;
-    position: relative;
-    margin-top: auto;
-    justify-content: center;
-  }
-
-  ._container_1y245_9 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 120vh;
-    margin: 0 auto;
-  }
-
-  ._column_1y245_18 {
-    flex: 1;
-    min-width: 20vh;
-    text-align: center;
-  }
-
-  ._social_1y245_29 {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  ._icons_1y245_33 {
-    display: flex;
-    justify-content: center;
-    gap: 1.5vh;
-    margin-top: 0.5vh;
-  }
 }
-@media (max-width: 320px) {
-  .images {
-    width: 100%;
-    margin-left: 1vh;
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .banner {
-    width: 100%;
-    height: 22%;
-  }
-  .banner img {
-    object-fit: contain;
-  }
-  .main {
-    height: auto;
-    width: 100%;
-    display: flex;
 
-
-  }
-  .seccion1[_ngcontent-ng-c586444243]{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 52.6vh;
-  }
+@media (min-width:900px) and (max-width:1700px){
   .seccion-formulario {
-    width: 100%;
-    height: 52.6vh;
+    width: 40%;
+    height: 50.5vh;
     display: flex;
     flex-wrap: wrap;
     border-radius: 5px;
-
     z-index: 1;
   }
-  
-  .select-formulario {
-    font-size: 14px;
-  }
   .formulario[_ngcontent-ng-c4043525379]{
-    width:100%;
-    height: 52.6vh;
-    border-radius: 5px;
-    background-color: #fff;
-    position: inherit;
-    margin-bottom: 10vh;
-    box-shadow: 0 4px 15px #00000024;
-    justify-content: space-around;
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    bottom: 53%;
   }
-  .title-top {
-    margin-top: 1vh;
-    height: 5vh;
+  .formulario h5{
+    font-size: 17px;
   }
-  .formulario h5,
-  h4 {
-    font-size: 18px;
-  }
-  .formulario p {
-    font-size: 12px;
-  }
-  .formulario-contenedores {
-    margin-top: 3vh;
-    height: 20vh;
+  .formulario h4 {
+    font-size: 22px;
   }
   .input-consentimiento button {
-    margin-left: 1vh;
+  margin-left: 3vh;
+}
+  .carousel{
+    width: 45%;
+    margin: 0;
+
   }
-  .input-consentimiento {
-    margin-top: 1vh;
-    margin-left: 0vh;
-    width: 95%;
+  .tt_d{
+    width: 75%;
+    margin: 0;
+    margin-top: 2px;
+    font-size: 12px;
   }
-  .form-check {
-    margin-left: 2vh;
-    font-size: 10px;
-  }
-  .carousel {
-    width: 92%;
-    height: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 55vh;
-  }
-  .carousel_pregunta2{
-    height: 13.2%;
-  }
+  
   .tt_d p{
-    font-size: .8rem;
-  }
-  .img_icon {
-    height: 100%;
-    width: 30px;
-    margin-top: 1vh;
-    margin-left: 1vh;
-  }
-
-  .col-12 {
-    display: none;
-  }
-
-  .col-12.active {
-    display: block;
-  }
-
-  .col-12.col-md-4.active {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .seccion1 {
-    height: 70vh;
-    margin: 0;
-  }
-
-  .seccion2 {
-    width: 85%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 10vh;
-    justify-content: space-around;
-    flex-shrink: 0;
-  }
-
-  .seccion2 .nav {
-    flex-wrap: nowrap;
-  }
-
-  .ul_prestamos {
-    width: 100%;
-    height: 5.4vh;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    justify-content: space-around;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .seccion2 .nav-item {
-    width: 100%;
-    display: flex;
-    margin: 0;
-  }
-  .seccion2 .nav-link {
-    /* nav parece que da un "height:auto;" */
-    width: 20vh;
-    white-space: nowrap;
-    margin: 0;
-  }
-  .ul_prestamos::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-  }
-  .contenedor-pregunta2{
-    height: auto;
-  }
-  .pregunta3 {
-   height: auto;
-  }
-
-  .ul_prestamos .nav-item {
-    align-items: flex-start;
-    width: 50%;
-    font-size: 17px;
-    font-weight: 700;
-    z-index: 5;
-  }
-  .ul_prestamos a{
-    text-align: center;
-  }
-
-  .containers-cards {
-    height:auto;
-    justify-content: center;
-
-  }
-
-  .pregunta2 {
-    height: auto;
-  }
-
-  .card {
-    height: 19.538vh;
-  }
-
-  .card-title {
-    font-size: 18px;
-    margin: 0 auto;
-  }
-
-  .card-subtitle[_ngcontent-ng-c2688154082] {
-    font-size: 18px;
-  }
-
-  .card h6 {
-    margin-left: 0;
-  }
-
-  .seccion3 {
-    width: 90%;
-    margin: 2vh auto;
-  }
-
-  .columnas {
-    margin-top: 24px;
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 24px;
-  }
-
-  .footer {
-    width: 100%;
-    height: 14.4vh;
-    position: relative;
-    margin-top: auto;
-    justify-content: center;
-  }
-
-  ._container_1y245_9 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 120vh;
-    margin: 0 auto;
-  }
-
-  ._column_1y245_18 {
-    flex: 1;
-    min-width: 20vh;
-    text-align: center;
-  }
-
-  ._social_1y245_29 {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  ._icons_1y245_33 {
-    display: flex;
-    justify-content: center;
-    gap: 1.5vh;
-    margin-top: 0.5vh;
+    font-size: 13px;
   }
 }
+@media (min-width:1701px) and (max-width:2560px){
+  .formulario[_ngcontent-ng-c4043525379]{
+    position: absolute;
+    width: 20%;
+    left: 55%;
+    bottom: 62%;
+  }
+  .formulario h5{
+    font-size: 17px;
+  }
+  .formulario h4 {
+    font-size: 22px;
+  }
+  .input-consentimiento button {
+  margin-left: 3vh;
+}
+  .carousel{
+    width: 30%;
+    margin: 0;
+    margin-left: 10%;
+
+  }
+  .tt_d{
+    width: 75%;
+    margin: 0;
+    margin-top: 2px;
+    font-size: 12px;
+  }
+  .tt_d h6{
+    font-size: 18px;
+  }
+  .tt_d p{
+    font-size: 15px;
+  }
+}
+

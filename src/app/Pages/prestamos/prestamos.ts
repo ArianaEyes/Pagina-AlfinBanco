@@ -49,7 +49,7 @@ export class Prestamos {
       titulo: 'Hasta 45 días',
       img: '/icons/icon3.svg',
       descripcion: 'Recibe total flexibilidad para iniciar el pago de tus cuotas de préstamo.',
-      height: '22%',
+      height: '23%',
     },
   ];
   currentIndex = 0;
